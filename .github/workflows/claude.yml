@@ -1,0 +1,38 @@
+name: OpenSIN Code
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened, assigned]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  opensin:
+    if: |
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@opensin')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@opensin')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@opensin')) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@opensin') || contains(github.event.issue.title, '@opensin')))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4
+        with:
+          fetch-depth: 1
+
+      - name: Run OpenSIN Code
+        id: opensin
+        uses: opensins/opensin-code-action@v1
+        with:
+          opensin_api_key: ${{ secrets.OPENSIN_API_KEY }}
+          opensin_args: "--model opensin-sonnet-4-5-20250929"
+

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord Community
+    url: https://opensin.com/discord
+    about: Get help, ask questions, and chat with other OpenSIN Code users
+  - name: 📖 Documentation
+    url: https://docs.opensin.com/en/docs/opensin-code
+    about: Read the official documentation and guides
+  - name: 🎓 Getting Started Guide
+    url: https://docs.opensin.com/en/docs/opensin-code/quickstart
+    about: New to OpenSIN Code? Start here
+  - name: 🔧 Troubleshooting Guide
+    url: https://docs.opensin.com/en/docs/opensin-code/troubleshooting
+    about: Common issues and how to fix them
