@@ -1,72 +1,30 @@
-# OpenSIN Code
+# OpenSIN-AI Platform — Plugin Ecosystem & GitHub Automation
 
-![](https://img.shields.io/badge/Node.js-18%2B-brightgreen?style=flat-square) [![npm]](https://www.npmjs.com/package/@opensin-ai/opensin-code)
+[![Documentation](https://img.shields.io/badge/docs-docs.opensin.ai-blue)](https://docs.opensin.ai/docs/guide/opensin-ai-platform)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-[npm]: https://img.shields.io/npm/v/@opensin-ai/opensin-code.svg?style=flat-square
+OpenSIN-AI Platform ist das Plugin- und Automatisierungs-Ökosystem der OpenSIN-AI Organisation. 14 Plugins, GitHub Workflows und DevContainer-Setup.
 
-OpenSIN Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows -- all through natural language commands. Use it in your terminal, IDE, or tag @opensin on Github.
+> **Teil des OpenSIN-AI Ökosystems:** [175 Repos | 17 Teams | 92 Worker | 7 MCP Server](https://github.com/OpenSIN-AI/OpenSIN-overview)
 
-**Learn more in the [official documentation](https://code.opensin.com/docs/en/overview)**.
+![](https://img.shields.io/badge/Node.js-18%2B-brightgreen?style=flat-square)
+
+OpenSIN-AI Platform extends OpenSIN-AI CLI and OpenSIN-AI Code with custom commands, agents, hooks, and GitHub automation workflows.
+
+**Learn more in the [official documentation](https://docs.opensin.ai/docs/guide/opensin-ai-platform)**.
 
 <img src="./demo.gif" />
 
-## Get started
-> [!NOTE]
-> Installation via npm is deprecated. Use one of the recommended methods below.
+## 🔗 OpenSIN-AI Ökosystem
 
-For more installation options, uninstall steps, and troubleshooting, see the [setup documentation](https://code.opensin.com/docs/en/setup).
+OpenSIN-AI Platform ist Teil des umfassendsten AI Agent Systems der Welt:
 
-1. Install OpenSIN Code:
-
-    **MacOS/Linux (Recommended):**
-    ```bash
-    curl -fsSL https://opensin.ai/install.sh | bash
-    ```
-
-    **Homebrew (MacOS/Linux):**
-    ```bash
-    brew install --cask opensin-code
-    ```
-
-    **Windows (Recommended):**
-    ```powershell
-    irm https://opensin.ai/install.ps1 | iex
-    ```
-
-    **WinGet (Windows):**
-    ```powershell
-    winget install OpenSIN.OpenSINCode
-    ```
-
-    **NPM (Deprecated):**
-    ```bash
-    npm install -g @opensin-ai/opensin-code
-    ```
-
-2. Navigate to your project directory and run `opensin`.
-
-## Plugins
-
-This repository includes several OpenSIN Code plugins that extend functionality with custom commands and agents. See the [plugins directory](./plugins/README.md) for detailed documentation on available plugins.
-
-## Reporting Bugs
-
-We welcome your feedback. Use the `/bug` command to report issues directly within OpenSIN Code, or file a [GitHub issue](https://github.com/opensins/opensin-code/issues).
-
-## Connect on Discord
-
-Join the [OpenSIN Developers Discord](https://opensin.com/discord) to connect with other developers using OpenSIN Code. Get help, share feedback, and discuss your projects with the community.
-
-## Data collection, usage, and retention
-
-When you use OpenSIN Code, we collect feedback, which includes usage data (such as code acceptance or rejections), associated conversation data, and user feedback submitted via the `/bug` command.
-
-### How we use your data
-
-See our [data usage policies](https://code.opensin.com/docs/en/data-usage).
-
-### Privacy safeguards
-
-We have implemented several safeguards to protect your data, including limited retention periods for sensitive information, restricted access to user session data, and clear policies against using feedback for model training.
-
-For full details, please review our [Commercial Terms of Service](https://www.opensin.com/legal/commercial-terms) and [Privacy Policy](https://www.opensin.com/legal/privacy).
+| Komponente | Repo | Zweck |
+|------------|------|-------|
+| **OpenSIN Core** | [OpenSIN-AI/OpenSIN](https://github.com/OpenSIN-AI/OpenSIN) | Free Core Engine (Python, 310+ Pakete) |
+| **OpenSIN Backend** | [OpenSIN-AI/OpenSIN-backend](https://github.com/OpenSIN-AI/OpenSIN-backend) | A2A Fleet Control Plane (SIN Solver) |
+| **OpenSIN-Code** | [OpenSIN-AI/OpenSIN-Code](https://github.com/OpenSIN-AI/OpenSIN-Code) | Autonomes CLI + SDK |
+| **opensin-ai-cli** | [OpenSIN-AI/opensin-ai-cli](https://github.com/OpenSIN-AI/opensin-ai-cli) | AI Coding Assistant in Rust |
+| **opensin-ai-code** | [OpenSIN-AI/opensin-ai-code](https://github.com/OpenSIN-AI/opensin-ai-code) | Python Agent Development Platform |
+| **17 Teams** | [OpenSIN-overview](https://github.com/OpenSIN-AI/OpenSIN-overview) | 92 Worker Agents |
+| **7 MCP Server** | [OpenSIN-overview](https://github.com/OpenSIN-AI/OpenSIN-overview) | Chrome Extension, Computer Use, Memory, Auth |
